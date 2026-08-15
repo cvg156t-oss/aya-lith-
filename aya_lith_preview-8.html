@@ -1,0 +1,18 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>إلى آية ❤️</title>
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;overflow:hidden;background:linear-gradient(135deg,#ffd8e6,#fff);font-family:Tahoma,Arial;color:#552538}.box{width:min(90%,430px);padding:30px 22px;text-align:center;background:#ffffffdd;border-radius:28px;box-shadow:0 12px 40px #7b29431f}h1{font-size:29px}p{font-size:18px;line-height:1.9}button{border:0;border-radius:30px;padding:13px 20px;margin:6px;background:#e85b87;color:white;font-size:17px;font-weight:bold}.hide{display:none}.heart{position:fixed;font-size:25px;pointer-events:none;animation:f 1.5s forwards}@keyframes f{to{transform:translateY(-170px) scale(1.5);opacity:0}}
+</style></head><body><div class="box">
+<div id="a1"><h1>إنتِ آية؟ 👀❤️</h1><p>جاوبي بصراحة دكتورة 😂</p><button onclick="go(2)">إي آني آية ❤️</button></div>
+<div id="a2" class="hide"><h1>وإنتِ منو؟ 👀</h1><button onclick="go(3)">دكتورة آية 👩‍⚕️</button><button onclick="go(3)">وحدة زعلانة 😒</button></div>
+<div id="a3" class="hide"><h1>أني ليث 😂❤️</h1><p>الشخص اللي كدر يزعل أحلى دكتورة 😂❤️</p><button onclick="go(4)">إي عرفتك</button></div>
+<div id="a4" class="hide"><h1>عندي سؤال ❤️</h1><p>برأيج ليش سويت هالرابط كله؟</p><button onclick="go(5)">حتى تصالحني؟ ❤️</button><button onclick="go(5)">ما أدري 😂</button></div>
+<div id="a5" class="hide"><h1>تشخيص ممتاز دكتورة 😂❤️</h1><p>إي، لأن ما أريد أخلي الزعل بيناتنا وكأنه ما صار شي.</p><button onclick="go(6)">كمّل 👀</button></div>
+<div id="a6" class="hide"><h1>آخر سؤال 🩷</h1><p>إذا اعتذرتلج من كل قلبي… أكو أمل تنحل السالفة؟</p><button onclick="go(7)">سامحتك ❤️</button><button onclick="go(8)">بعدني زعلانة 😌</button></div>
+<div id="a7" class="hide"><h1>الحمدلله 😂❤️</h1><p>نجت الحالة الطبية 😂❤️ شكراً لأنج سامحتيني.</p><button onclick="go(9)">آخر شي ❤️</button></div>
+<div id="a8" class="hide"><h1>حقج عليّ ❤️</h1><p>خذي راحتج، ما أريد أضغط عليج. بس حبيت تعرفين إن اعتذاري من صدگ.</p><button onclick="go(9)">آخر رسالة ❤️</button></div>
+<div id="a9" class="hide"><h1>آية ❤️</h1><p>أدري يمكن هالرابط كله بيه ضحك وقلوب، بس بالنهاية عندي كلمة أريد أوصلها إلج بصدق.</p><p>إذا زعلتج أو ضايقتج بأي كلمة أو تصرف مني، فـ حقج عليّ. ما كان قصدي أجرحج ولا أخلي بخاطرج مني.</p><p>إنتِ شخص عزيز عليّ، وما أحب أشوفج زعلانة مني.</p><p><b>سامحيني إذا تكدرين، وخليها آخر زعلة بيناتنا 😂❤️</b></p><p>دكتورة آية… شنو تشخيص الحالة؟ وهل أكو أمل بالشفاء؟ 😂❤️</p></div>
+</div><script>
+function go(n){document.querySelectorAll('[id^=a]').forEach(x=>x.classList.add('hide'));document.getElementById('a'+n).classList.remove('hide');hearts(innerWidth/2,innerHeight/2)}
+function hearts(x,y){let e=['❤️','💕','💗','💖','🩷'];for(let i=0;i<6;i++){let h=document.createElement('span');h.className='heart';h.textContent=e[Math.floor(Math.random()*e.length)];h.style.left=x+Math.random()*80-40+'px';h.style.top=y+'px';document.body.appendChild(h);setTimeout(()=>h.remove(),1600)}}
+document.addEventListener('pointerdown',e=>hearts(e.clientX,e.clientY));
+</script></body></html>
